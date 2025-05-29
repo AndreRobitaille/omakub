@@ -1,7 +1,13 @@
+# Fix for accents input with UTF-8.
 set meta-flag on
 set input-meta on
 set output-meta on
-set convert-meta off
+
+# To allow the use of 8bit-characters like the german umlauts, uncomment
+# the line below. However this makes the meta key not work as a meta key,
+# which is annoying to those which don't need to type in 8-bit characters.
+# set convert-meta off
+
 set completion-ignore-case on
 set completion-prefix-display-length 2
 set show-all-if-ambiguous on
